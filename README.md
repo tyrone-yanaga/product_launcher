@@ -2,8 +2,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
-
+First, setup (from my-app folder):
+```
+npm install
+```
+run the development server:
 ```bash
 npm run dev
 # or
@@ -16,8 +19,14 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
-
-to run the backend
+backend setup (from BE folder):
 ```
-uvicorn app.main:app --reload --port 8000```
+python -m venv venv
+source venv/bin/activate
+pip install requirements.txt
+```
+
+to run:
+```
+uvicorn app.main:app --reload --port 8000
+```
